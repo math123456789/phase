@@ -56,6 +56,7 @@ There are  mainly 3 types  of Normalization
 + Each colum should Have a unique name
 
 + Order in which data is saved doesn't matter
+
 **2NF(2nd  Normal Form)**: For a table to be in  2NF
 + it should be in 1st Normal Form
 + And it should not Have any Partial Dependencies
