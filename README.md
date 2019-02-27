@@ -23,7 +23,7 @@ let us consider students table
 Whenever we add a new student to students table  of samebranch,hod(head of department),office_tel keeps repeated
 To avoid This we partition the table into two tables one is  students table and other is Branch table This is known as  Normalization
 
-*STUDENTS TABLE*
+**STUDENTS TABLE**
 
 | roll_no | name | Branch |
 |----------|---------|------|
@@ -44,11 +44,11 @@ To avoid This we partition the table into two tables one is  students table and 
 
 
 There are  different types of Normalization
-+ *1NF*
-+ *2NF*
-+ *3NF*
++ **1NF**
++ **2NF**
++ **3NF**
 
-*1NF( 1st Normal Form)*: Every Database should at least follow the  1st Normal Form. There are few rules to satisfy 1NF
+**1NF( 1st Normal Form)**: Every Database should at least follow the  1st Normal Form. There are few rules to satisfy 1NF
 + Each Column should contain atomic values
 
 + A column should contain values that are of same data type
@@ -56,12 +56,12 @@ There are  different types of Normalization
 + Each colum should Have a unique name
 
 + Order in which data is saved doesn't matter
-*2NF(2nd  Normal Form)*: For a table to be in  2NF
+**2NF(2nd  Normal Form)**: For a table to be in  2NF
 + it should be in 1st Normal Form
 + And it should not Have any Partial Dependencies
 *Example*:we have a students table
 
-*STUDENTS TABLE*
+**STUDENTS TABLE**
 
 | student_id| name | Reg_no| Branch | address|
 |----------|---------|-----------|-----------------------------------|--------------|  
@@ -72,14 +72,14 @@ There are  different types of Normalization
 
 Lets create subject table
 
-*SUBJECT TABLE*
+**SUBJECT TABLE**
 
 |subject_id|subject_name|
 |------|-----|
 |1002|Maths|
   
 Another table called scores table is created to save marks obtained by students in each subject
-*SCORES TABLE*
+**SCORES TABLE**
 
 
 | score_id |student_id | subject_id | marks| teacher|
@@ -91,19 +91,19 @@ Another table called scores table is created to save marks obtained by students 
 
 Here the primary key is student_id + subject_id.notice that teacher column only depends on subject_id but not on student_id  this is called Partial Dependency and for a table to be in 2NF this should not exist.To avoid partial dependency Move teacher column to subject table
 
-*SUBJECT TABLE*
+**SUBJECT TABLE**
 
 |subject_id|subject_name|teacher|
 |----|-----|---------|
 | | | |
 
-*3NF(3rd Normal Form)* :For a table to be in 3NF
+**3NF(3rd Normal Form)** :For a table to be in 3NF
 + it should be in 2NF
 + it should not have Transitive Dependency
 lets continue our previous example
 in scores table add two more columns which are exam_name, total_marks
 
-*SCORES TABLE*
+**SCORES TABLE**
 
 |score_id|student_id|subject_id|marks|exam_name|total_marks|
 |-----------|--------------|--------------|--------|----------------|-----------------|
@@ -112,7 +112,8 @@ in scores table add two more columns which are exam_name, total_marks
 
 student_id+subject_id is the primary key in scores table.Here total_marks depends only on exam_name which is a non-key attribute.This is Transitive Dependency
 To satisfy 3NF Transitive Dependency should not exist. We make a new table exam where we take out exam_name and total_marks from scores table and add in exam table so that we can remove transitive dependency
-*EXAM TABLE*
+
+**EXAM TABLE**
 
 |exam_name|total_marks|
 |----------------|----|
