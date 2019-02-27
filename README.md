@@ -1,14 +1,15 @@
 #  NORMALIZATION
-**Normalization** is a technique of oraganizing the data into multiple realted tables, to minimize data redundancy
+**NORMALIZATION** is a technique of oraganizing the data into multiple realted tables, to minimize data redundancy
 
 **DATA REDUNDUNCY** is repetition of data in multiple places which increases size of database
 and also gives issues like
-+ insertion anomaly: to insert redundant data for every new row is a a data insertion problem
++ Insertion anomaly: to insert redundant data for every new row is a a data insertion problem
 + Deletion anomaly: loss of a related dataset when some other dataset is deleted
 + Updation anomaly: data inconsistency that results from data redundancy and partial update
+
 *Example*:
 
-we have a students table
+let us consider students table
 
 **STUDENTS TABLE**
 
@@ -57,7 +58,7 @@ There are  different types of Normalization
 + Order in which data is saved doesn't matter
 *2NF(2nd  Normal Form)*: For a table to be in  2NF
 + it should be in 1st Normal Form
-+ And, it should not Have any Partial Dependencies
++ And it should not Have any Partial Dependencies
 *Example*:we have a students table
 
 *STUDENTS TABLE*
