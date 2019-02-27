@@ -67,7 +67,8 @@ There are  different types of Normalization
 |2| Dennis|101|CSE|New York|
 |3|Bruce lee| 102| CSE|Hong-kong|
 |4|Michael Jackson|103|ECE|United states|  
- Lets create subject table
+
+Lets create subject table
 
 *SUBJECT TABLE*
 |subject_id|subject_name|
