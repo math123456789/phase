@@ -36,7 +36,7 @@ To avoid This we partition the table into two tables one is  students table and 
 |----------|---------|-----------|-----------------------------------|--------------|  
 |CSE|Mr.Ramanujam|53337|
 |CSE|Mr.Ramanujam|53337|
-| CSE|Mr.Ramanujam|53337|
+|CSE|Mr.Ramanujam|53337|
 |ECE|Mr.Druva|54447|
 
 There are  different types of Normalization
