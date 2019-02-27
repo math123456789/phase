@@ -32,7 +32,6 @@ To avoid This we partition the table into two tables one is  students table and 
 |4|Michael Jackson|ECE|
 
 **BRANCH TABLE**
-
 | Branch | hod(head of department)| office_tel |
 |----|------|------|----|----|  
 |CSE|Mr.Ramanujam|53337|
