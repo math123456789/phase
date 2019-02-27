@@ -1,7 +1,7 @@
 #  NORMALIZATION
 **Normalization** is a technique of oraganizing the data into multiple realted tables, to minimize data redundancy
 
-*DATA REDUNDUNCY* is repetition of data in multiple places which increases size of database
+**DATA REDUNDUNCY** is repetition of data in multiple places which increases size of database
 and also gives issues like
 + insertion anomaly: to insert redundant data for every new row is a a data insertion problem
 + Deletion anomaly: loss of a related dataset when some other dataset is deleted
@@ -10,7 +10,7 @@ and also gives issues like
 
 we have a students table
 
-*STUDENTS TABLE*
+**STUDENTS TABLE**
 
 | roll_no | name | Branch | hod(head of department) | office_tel |
 |----------|---------|-----------|-----------------------------------|--------------|  
@@ -31,11 +31,11 @@ To avoid This we partition the table into two tables one is  students table and 
 |3|Bruce lee| CSE|
 |4|Michael Jackson|ECE|
 
-*BRANCH TABLE*
-
+**BRANCH TABLE**
 |Branch|hod(head of department)|office_tel|
 |----|---------|-----------|----|----|  
 |CSE|Mr.Ramanujam|53337|
+
 |CSE|Mr.Ramanujam|53337|
 |CSE|Mr.Ramanujam|53337|
 |ECE|Mr.Druva|54447|
