@@ -15,7 +15,6 @@ we have a students table
 | roll_no | name | Branch | hod(head of department) | office_tel |
 |----------|---------|-----------|-----------------------------------|--------------|  
 |1| Bruno mars|CSE|Mr.Ramanujam|53337|
-
 |2| Dennis|CSE|Mr.Ramanujam|53337|
 |3|Bruce lee| CSE| Mr.Ramanujam|53337|
 |4|Michael Jackson|ECE|Mr.Druva|54447|
@@ -39,6 +38,7 @@ To avoid This we partition the table into two tables one is  students table and 
 |CSE|Mr.Ramanujam|53337|
 | CSE|Mr.Ramanujam|53337|
 |ECE|Mr.Druva|54447|
+
 There are  different types of Normalization
 + *1NF*
 + *2NF*
