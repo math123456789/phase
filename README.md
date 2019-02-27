@@ -89,7 +89,7 @@ Here the primary key is student_id + subject_id.notice that teacher column only 
 *SUBJECT TABLE*
 
 |subject_id|subject_name|teacher|
-|--------------|------------------ |----------|
+|----|-----|---------|
 | | | |
 
 *3NF(3rd Normal Form)* :For a table to be in 3NF
