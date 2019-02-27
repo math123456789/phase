@@ -1,5 +1,6 @@
 #  NORMALIZATION
 **Normalization** is a technique of oraganizing the data into multiple realted tables, to minimize data redundancy
+
 *DATA REDUNDUNCY* is repetition of data in multiple places which increases size of database
 and also gives issues like
 + insertion anomaly: to insert redundant data for every new row is a a data insertion problem
