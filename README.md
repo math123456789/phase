@@ -75,7 +75,7 @@ Another table called scores table is created to save marks obtained by students 
 |1| 1000|1|85|Mr. Vijay|
 |2|1001|3|73|Mr.Anand|
 |3|1002| 2| 90|Mr.Ajay|
-|4|Michael Jackson|1003|4|Mr.Devendre|
+|4|1003|4|86|Mr.Devendre|
 
 Here the primary key is student_id + subject_id.notice that teacher column only depends on subject_id but not on student_id  this is called Partial Dependency and for a table to be in 2NF this should not exist.To avoid partial dependency Move teacher column to subject table
 *SUBJECT TABLE*
