@@ -71,8 +71,9 @@ There are  different types of Normalization
 Lets create subject table
 
 *SUBJECT TABLE*
+
 |subject_id|subject_name|
-|-------------|------------------|
+|------|-----|
 |1002|Maths|
   
 Another table called scores table is created to save marks obtained by students in each subject
