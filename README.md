@@ -7,8 +7,11 @@ and also gives issues like
 + Deletion anomaly: loss of a related dataset when some other dataset is deleted
 + Updation anomaly: data inconsistency that results from data redundancy and partial update
 *Example*:
+
 we have a students table
+
 *STUDENTS TABLE*
+
 | roll_no | name | Branch | hod(head of department) | office_tel |
 |----------|---------|-----------|-----------------------------------|--------------|  
 |1| Bruno mars|CSE|Mr.Ramanujam|53337|
@@ -19,7 +22,9 @@ we have a students table
 
 Whenever we add a new student to students table  of samebranch,hod(head of department),office_tel keeps repeated
 To avoid This we partition the table into two tables one is  students table and other is Branch table This is known as  Normalization
-*STUDENTS TABLE*                                 
+
+*STUDENTS TABLE*
+
 | roll_no | name | Branch |
 |----------|---------|------|
 |1| Bruno mars|CSE|
@@ -79,6 +84,7 @@ Another table called scores table is created to save marks obtained by students 
 |4|1003|4|86|Mr.Devendre|
 
 Here the primary key is student_id + subject_id.notice that teacher column only depends on subject_id but not on student_id  this is called Partial Dependency and for a table to be in 2NF this should not exist.To avoid partial dependency Move teacher column to subject table
+
 *SUBJECT TABLE*
 
 |subject_id|subject_name|teacher|
