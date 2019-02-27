@@ -1,6 +1,6 @@
 #  NORMALIZATION
 **Normalization** is a technique of oraganizing the data into multiple realted tables, to minimize data redundancy
-*DATA REDUNDANCY* is repetation of data in multiple places which increases size of database
+*DATA REDUNDUNCY* is repetition of data in multiple places which increases size of database
 and also gives issues like
 + insertion anomaly: to insert redundant data for every new row is a a data insertion problem
 + Deletion anomaly: loss of a related dataset when some other dataset is deleted
@@ -50,7 +50,9 @@ There are  different types of Normalization
 + it should be in 1st Normal Form
 + And, it should not Have any Partial Dependencies
 *Example*:we have a students table
+
 *STUDENTS TABLE*
+
 | student_id| name | Reg_no| Branch | address|
 |----------|---------|-----------|-----------------------------------|--------------|  
 |1| Bruno mars|100|CSE|United states|
@@ -74,8 +76,10 @@ Another table called scores table is created to save marks obtained by students 
 |2|1001|3|73|Mr.Anand|
 |3|1002| 2| 90|Mr.Ajay|
 |4|Michael Jackson|1003|4|Mr.Devendre|
+
 Here the primary key is student_id + subject_id.notice that teacher column only depends on subject_id but not on student_id  this is called Partial Dependency and for a table to be in 2NF this should not exist.To avoid partial dependency Move teacher column to subject table
 *SUBJECT TABLE*
+
 |subject_id|subject_name|teacher|
 |--------------|------------------ |----------|
 | | | |
@@ -85,7 +89,9 @@ Here the primary key is student_id + subject_id.notice that teacher column only 
 + it should not have Transitive Dependency
 lets continue our previous example
 in scores table add two more columns which are exam_name, total_marks
+
 *SCORES TABLE*
+
 |score_id|student_id|subject_id|marks|exam_name|total_marks|
 |-----------|--------------|--------------|--------|----------------|-----------------|
 | | | | | | |
@@ -94,6 +100,7 @@ in scores table add two more columns which are exam_name, total_marks
 student_id+subject_id is the primary key in scores table.Here total_marks depends only on exam_name which is a non-key attribute.This is Transitive Dependency
 To satisfy 3NF Transitive Dependency should not exist. We make a new table exam where we take out exam_name and total_marks from scores table and add in exam table so that we can remove transitive dependency
 *EXAM TABLE*
+
 |exam_name|total_marks|
 |----------------|----|
 | |
