@@ -33,13 +33,14 @@ To avoid This we partition the table into two tables one is  students table and 
 
 **BRANCH TABLE**
 
-
-|Branch_id|hod(head of department)|office_tel|
-|----|---------|-----------|----|----|  
+| Branch | hod(head of department)| office_tel |
+|----|------|------|----|----|  
 |CSE|Mr.Ramanujam|53337|
 |CSE|Mr.Ramanujam|53337|
 |CSE|Mr.Ramanujam|53337|
 |ECE|Mr.Druva|54447|
+
+
 
 There are  different types of Normalization
 + *1NF*
