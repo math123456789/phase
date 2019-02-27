@@ -34,7 +34,7 @@ To avoid This we partition the table into two tables one is  students table and 
 *BRANCH TABLE*
 
 | Branch | hod(head of department) | office_tel |
-|----------|---------|-----------|-----------------------------------|--------------|  
+|----------|---------|-----------|----|----|  
 |CSE|Mr.Ramanujam|53337|
 |CSE|Mr.Ramanujam|53337|
 |CSE|Mr.Ramanujam|53337|
