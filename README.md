@@ -3,11 +3,11 @@
 
 **DATA REDUNDUNCY** is repetition of data in multiple places which increases size of database
 and also gives issues like
-+ Insertion anomaly: to insert redundant data for every new row is a a data insertion problem
++ Insertion anomaly: To insert redundant data for every new row is a a data insertion problem
 + Deletion anomaly: loss of a related dataset when some other dataset is deleted
 + Updation anomaly: data inconsistency that results from data redundancy and partial update
 
-*Example*:
+**Example**:
 
 let us consider students table
 
@@ -43,7 +43,7 @@ To avoid This we partition the table into two tables one is  students table and 
 
 
 
-There are  different types of Normalization
+There are  mainly 3 types  of Normalization
 + **1NF**
 + **2NF**
 + **3NF**
@@ -59,7 +59,7 @@ There are  different types of Normalization
 **2NF(2nd  Normal Form)**: For a table to be in  2NF
 + it should be in 1st Normal Form
 + And it should not Have any Partial Dependencies
-*Example*:we have a students table
+**Example**:we have a students table
 
 **STUDENTS TABLE**
 
